@@ -55,7 +55,7 @@ task licenseFormatAndroid(type: nl.javadude.gradle.plugins.license.License) {
 licenseFormat.dependsOn licenseFormatAndroid
 
 ext {
-    majorVersion = "2.29."
+    majorVersion = "2.30."
 
     compileSdkVersion = 24
     minSdkVersion = 17
@@ -73,10 +73,10 @@ ext {
     playServicesVersion = '10.0.1'
 
     audioVersion = System.getenv("AUDIO_VERSION") ?: '1.209.0@aar'
-    zMessagingDevVersionBase = '93.1396'
+    zMessagingDevVersionBase = '94.1409'
     zMessagingDevVersion = "${zMessagingDevVersionBase}@aar"
     // Release version number must be like this X.0(.Y)
-    zMessagingReleaseVersion = System.getenv("ZMESSAGING_VERSION") ?: '93.1.330@aar'
+    zMessagingReleaseVersion = System.getenv("ZMESSAGING_VERSION") ?: '94.2.333@aar'
 
     avsVersion = '3.2.88@aar'
     avsInternalVersion = avsVersion //leave this here in case we want to test specific AVS versions on internal
